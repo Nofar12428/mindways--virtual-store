@@ -1,0 +1,100 @@
+﻿
+body {
+    font-family: 'Assistant',Arial;
+    background-color: #F6EEEB;
+    color: black;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #243756;
+    text-align: center;
+    font-size: 48px;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+form {
+    margin-top: 60px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    width: 33.33%;
+    text-align: center;
+    padding: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100px;
+    transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:not(:checked) + img {
+    opacity: 0.5;
+}
+
+input[type="checkbox"]:checked + img {
+    opacity: 1;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #243756;
+    border-radius: 5px;
+    resize: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F7BCA3;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    opacity: 0.5;
+}
+
+    input[type="submit"]:disabled:hover {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    input[type="submit"]:hover {
+        opacity: 100%;
+    }
+
+.imgRadios {
+    display: none;
+}

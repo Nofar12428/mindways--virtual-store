@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>מיינדוויז-חנות</title>
+    <meta name="description" content="חנות וירטואלית" />
+    <meta name="keywords" content="צמחי מרפא,ויטמינים" />
+    <meta name="author" content="נופר גנון, שיר שמואלי, עדן רוצקי, אלמוג קונטנט" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+
+    <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+    <div id="container">
+        <section id="journey">
+            <h1>מיינדוויז</h1>
+            <p>
+                ברוכים הבאים לחנות האינטרנטית שלנו! החנות שלנו מציעה מגוון של תוספים שונים מהם תוכלו לבחור כדי להרכיב לעצמכם תוספי תזונה המתאימים לצרכים האישיים שלכם. החל מצמחי מרפא איכותיים המיועדים לויסות מתח וחרדה בשילוב עם וויטמינים חיוניים לבריאות.
+                התוספים שאנו מציעים נבחרו בקפידה מתוך ידיעה עמוקה על השפעותיהם המיטיבות על הגוף והנפש. תוספי התזונה שלנו מיוצרים מחומרים טבעיים בלבד, תוך הקפדה על תהליכי ייצור מתקדמים ואחראיים.
+                הצטרפו אלינו למסע של רוגע ושלווה וצרו לעצמכם את התוסף תזונה האידיאלי שלכם!
+                הזמנה קלה ונוחה בקליק.
+            </p>
+        </section>
+        <form>
+            <section>
+                <p><b>בחר 2 סוגי פרחים לפחות</b></p>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Lavender">
+                                <input type="checkbox" id="Lavender" name="options" onclick="handleSubmit()">
+                                <img src="images/LAVENDER.png" alt="Lavender Flower">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="valerian">
+                                <input type="checkbox" id="valerian" name="options" onclick="handleSubmit()">
+                                <img src="images/VALERIAN.png" alt="valerian Flower">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="pasiflora">
+                                <input type="checkbox" id="pasiflora" name="options" onclick="handleSubmit()">
+                                <img src="images/PASIFLORA.jpg" alt="pasiflora Flower">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="malissa">
+                                <input type="checkbox" id="malissa" name="options" onclick="handleSubmit()">
+                                <img src="images/MALISSA.jpg" alt="malissa Flower">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="camomile">
+                                <input type="checkbox" id="camomile" name="options" onclick="handleSubmit()">
+                                <img src="images/CAMOMILE.jpg" alt="camomile Flower">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <p><b>בחר את הויטמין הרצוי</b></p>
+                <p>ויטמין A</p>
+                <label>
+                    <input type="radio" id="Vitamin_A" name="radios" onclick="RadioChange('Vitamin_A', 'Vitamin_A_image')">
+                    <img src="images/VITAMIN_A.png" alt="vitaminA" id="Vitamin_A_image" class="imgRadios">
+                </label>
+
+                <p>ויטמין B</p>
+                <label>
+                    <input type="radio" id="Vitamin_B" name="radios" onclick="RadioChange('Vitamin_B', 'Vitamin_B_image')">
+                    <img src="images/VITAMIN_B.png" alt="vitaminB" id="Vitamin_B_image" class="imgRadios">
+                </label>
+
+                <p>ויטמין C</p>
+                <label>
+                    <input type="radio" id="Vitamin_C" name="radios" onclick="RadioChange('Vitamin_C', 'Vitamin_C_image')">
+                    <img src="images/VITAMIN_C.png" alt="vitaminC" id="Vitamin_C_image" class="imgRadios">
+                </label>
+
+                <p>ויטמין D</p>
+                <label>
+                    <input type="radio" id="Vitamin_D" name="radios" onclick="RadioChange('Vitamin_D', 'Vitamin_D_image')">
+                    <img src="images/VITAMIN_D.png" alt="vitaminD" id="Vitamin_D_image" class="imgRadios">
+                </label>
+
+            </section>
+            <p><b>הערות נוספות להזמנה*</b></p>
+            <label for="details">
+                <textarea id="details" oninput="handleSubmit()"> </textarea>
+            </label>
+            <section>
+                <label for="submit1">
+                    <input type="submit" id="submit1" value="שלח" onclick="submitMsg()" disabled />
+                </label>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
